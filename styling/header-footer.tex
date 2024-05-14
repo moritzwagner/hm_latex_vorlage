@@ -1,0 +1,25 @@
+% Kopf- und Fußzeile
+
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+
+% Kopfzeile
+\fancyhead{} % clear all header fields
+% Kopfzeile links gerade Seite
+\fancyhead[LE]{\leftmark}
+% Kopfzeile rechts ungerade Seite
+\fancyhead[RO]{Header bearbeiten in style/header-footer.tex}
+% Kopfzeile links ungerade Seite (Seitenzahl [Seite von Seitenanzahl])
+\fancyhead[LO]{Seite \thepage{} von \pageref{LastPage}}
+% Kopfzeile rechts gerade Seite (Seitenzahl [Seite von Seitenanzahl])
+\fancyhead[RE]{Seite \thepage{} von \pageref{LastPage}}
+
+% Kopfzeile erste Seite
+\fancypagestyle{plain}{
+    \fancyhf{}
+    \fancyhead[L]{Seite \thepage{} von \pageref{LastPage}}
+    \fancyhead[C]{Modulname}
+    \fancyhead[R]{Organisation}
+    \renewcommand{\headrulewidth}{0.4pt} 
+}

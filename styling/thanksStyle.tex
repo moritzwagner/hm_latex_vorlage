@@ -1,0 +1,5 @@
+% Redefine \thanks{text} 
+\makeatletter
+\def\thanks#1{\protected@xdef\@thanks{\@thanks
+        \protect\footnotetext{#1}}}
+\makeatother

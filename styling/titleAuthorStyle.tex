@@ -1,0 +1,20 @@
+\makeatletter
+\def\@maketitle{%
+  \newpage
+%  \null% DELETED
+%  \vskip 2em% DELETED
+  \begin{center}%
+  \let \footnote \thanks
+    {\LARGE \@title \par}%
+    \vskip .5em%
+    {\large
+      \lineskip .1em%
+      \begin{tabular}[t]{c}%
+        \@author
+      \end{tabular}\par}%
+    \vskip 1em%
+    {\small \@date}%
+  \end{center}%
+  \par
+  \vskip 1.5em}
+\makeatother

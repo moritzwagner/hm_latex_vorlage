@@ -1,0 +1,15 @@
+\usepackage[compact]{titlesec}
+\usepackage{color}
+\usepackage{xcolor}
+\usepackage{titling}
+
+\definecolor{customblue}{RGB}{0,0,153}
+\makeatletter
+\beforetitleunit=1ex\@plus.6ex\@minus.12ex
+\makeatother
+
+\titlespacing*{\section}{0pt}{*1}{*1}
+\beforetitleunit= 0.1cm
+\titleformat{\section}
+{\color{customblue}\normalfont\Large\bfseries}
+{\color{customblue}\thesection}{1em}{}

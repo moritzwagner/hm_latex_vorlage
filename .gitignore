@@ -1,0 +1,17 @@
+main.pdf
+main-blx.bib
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.glg
+*.glo
+*.gls
+*ist
+*.lof
+*.log
+*.out
+*.xml
+*.gz
+*.toc

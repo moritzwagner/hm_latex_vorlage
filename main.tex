@@ -1,0 +1,77 @@
+% Vorgabe der Text- und Papeiergröße und den Titel auf eigene Seite
+\documentclass[a4paper,12pt,twoside,notitlepage, letterpaper]{article}
+% Bilderimport
+\usepackage{graphicx}
+\usepackage{float}
+% Deutsche Localization
+\usepackage[ngerman]{babel}
+% Erweiterte Refernezierungsmöglichkeiten
+% hidelinks = Keine rote Umrandung
+\usepackage[hidelinks]{hyperref}
+% Times New Roman Schriftart
+\usepackage{times}
+% Fix für deutsche Schriftzeichen und andere Non-ASCII-Zeichen
+\usepackage[T1]{fontenc}
+% Zitatzeichensetzung
+\usepackage[%
+left = \glqq,%
+right = \grqq,%
+leftsub = \glq,%
+rightsub = \grq%
+]{dirtytalk}
+% Highlight
+\usepackage{soul}
+\DeclareRobustCommand{\hlyellow}[1]{\sethlcolor{yellow}\hl{#1}}
+\usepackage{color}
+% Tabellenzelle über mehrere Zeilen
+\usepackage{multirow}
+% Mehrere Spalten
+\usepackage{multicol}
+% Zitierung
+\usepackage[backend=bibtex,style=authoryear-icomp, maxcitenames=2]{biblatex}
+% Letze Seite
+\usepackage{lastpage}
+% Titel Anpassungen
+\usepackage{titling}
+
+% Laden der Literaturquellen
+\addbibresource{sources.bib}
+
+% Verbesserte Tabellen
+\usepackage{tabularx}
+
+% Um Tabellenbreite zu bestimme
+\usepackage{array}
+
+% Abkürzungsverzeichnis und Glossar hinzufügen
+\input{2_Acronyms}
+\input{3_Glossary}
+
+% Styling-Anpassungen importieren
+\input{styling/index}
+
+%Textfüller
+\usepackage{lipsum}
+
+\begin{document}
+\thispagestyle{fancy}
+
+\input{1_TitleAutorKeywords}
+
+\begin{multicols}{2}
+    \input{content/index}
+
+    \appendix
+
+    \printbibliography[title=Literaturverzeichnis]
+
+    \printglossary
+
+    \section{Abkürzungsverzeichnis}
+    \printacronyms[heading=none]
+
+    \section{Abbildungsverzeichnis}
+    \listoffigures
+\end{multicols}
+
+\end{document}

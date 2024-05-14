@@ -1,0 +1,14 @@
+% Styling-Anpassungen für die Bibliographie
+
+% Engerer Zeilenabstand in Bibliographie
+\setlength{\bibparsep}{.5\baselineskip}
+
+% Optionales Kommentar zu jedem Eintrag in der Bibliographie (Gerling-Moment)
+\renewbibmacro*{finentry}{%
+  \setunit{\finentrypunct\par}%
+  \printfield{annotation}%
+  \finentry}
+
+% Versuche einen Zeilenumbruch in URLs zu verhindern, außer an Bindestrichen, Punkten, etc.
+\setcounter{biburllcpenalty}{9000}% Kleinbuchstaben
+\setcounter{biburlucpenalty}{9000}% Großbuchstaben

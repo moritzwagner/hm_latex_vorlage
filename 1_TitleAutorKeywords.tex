@@ -1,0 +1,27 @@
+% Titel
+\title{Titel der Studienarbeit}
+% Autoren
+\author{
+    Vorname Nachname
+    \thanks{Resume: Vorname Nachname \href{mailto:mail@hm.edu}{mail@hm.edu} ist Student an der Hochschule München.}%
+    \thanks{Diese Studienarbeit wurde im Rahmen des Moduls \glqq Modulname\grqq\ erstellt.}% 
+}
+% Datum
+\date{München, 01.01.2024}
+\maketitle
+
+% Abstract
+\vspace{-1cm} % Abstand nach Author entfernen
+% Abstract in der Datei content/0_Abstract.tex erstellen
+\input{content/0_Abstract}
+
+% Keywords
+
+\providecommand{\keywords}[1]
+{
+  \small	
+  \textbf{\textit{Schlüsselworte---}} #1
+}
+\keywords{
+    Erstes Schlüsselwort, Zweites Schlüsselwort, Drittes Schlüsselwort, Viertes Schlüsselwort, Fünftes Schlüsselwort
+}
