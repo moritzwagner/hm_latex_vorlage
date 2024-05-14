@@ -47,6 +47,9 @@ winget install MiKTeX.MiKTeX
 
 In der Datei [`content/1_Kapitel1.tex`](content/1_Kapitel1.tex) sind Beispiele für die Verwendung von Abkürzungen, Glossareinträgen Quellenverweisen und die Einbindung von Graphiken enthalten.
 
+### GitHub Actions
+In der Datei [`.github/workflows/latex.yml`](.github/workflows/latex.yml) ist ein GitHub Action Workflow definiert, der bei jedem Push auf den `main`-Branch das Dokument generiert und als Artefakt bereitstellt. Dieses kann in den Actions heruntergeladen werden.
+
 ### Optionale Funktionen
 
 In der `.bib`-Datei des Quellenverzeichnisses kann ein optionaler `annotation`-Key verwendet werden, um den Quellen ein Kommentar zu geben (z.B. Warum die Quelle verwendet wurde oder was sie enthält).
