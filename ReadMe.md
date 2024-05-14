@@ -29,7 +29,6 @@ winget install MiKTeX.MiKTeX
 - Namen der Autoren
 - Schlüsselwörter
 - Datum
-- Fußzeile mit Referenz des Autors
 
 2. In der Datei [`2_Acronyms.tex`](2_Acronyms.tex) können Abkürzungen hinzugefügt werden. Diese werden automatisch im Dokument referenziert und im Abkürzungsverzeichnis aufgeführt.
 
