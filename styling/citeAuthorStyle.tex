@@ -1,0 +1,10 @@
+\DeclareCiteCommand{\citeauthor}
+  {\boolfalse{citetracker}%
+   \boolfalse{pagetracker}%
+   \usebibmacro{prenote}}
+  {\ifciteindex
+     {\indexnames{labelname}}
+     {}%
+   \printtext[bibhyperref]{\textsc{\printnames{labelname}}}}
+  {\multicitedelim}
+  {\usebibmacro{postnote}}
