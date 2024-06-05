@@ -1,6 +1,7 @@
 \DeclareCiteCommand{\cite}
-  {\usebibmacro{prenote}}
+  {}
   {\usebibmacro{citeindex}%
-   \textsc{\printtext[brackets]{\usebibmacro{cite}}}}
-  {\multicitedelim}
-  {\usebibmacro{postnote}}
+   \printtext[brackets]{\usebibmacro{prenote}\textsc{\usebibmacro{cite}%
+   \setunit{\multicitedelim}}\usebibmacro{postnote}}}
+  {}
+  {}
