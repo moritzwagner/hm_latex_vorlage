@@ -1,0 +1,17 @@
+Brandner
+Cloudanbieter
+Cloudressourcen
+Containerisierung
+Infrastrukturexperte
+Infrastrukturteam
+Integrationen
+Monorepository
+Multirepository
+Rückverfolgbarkeit
+Semestergruppe
+Sicherheitsaudits
+Überwachbarkeit
+versioniert
+versionierte
+Versionierung
+Weaveworks

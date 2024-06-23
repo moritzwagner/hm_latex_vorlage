@@ -1,0 +1,39 @@
+{
+  "version": "0.2",
+  "import": ["@cspell/dict-de-de/cspell-ext.json", "@cspell/dict-latex"],
+
+  "language": "en,de",
+
+  "ignorePaths": [
+    "pnpm-lock.yaml",
+    ".editorconfig",
+    ".prettierrc",
+    "*.pptx",
+    "*.bib"
+  ],
+  "useGitignore": true,
+
+  "dictionaries": ["custom-terms", "azure", "bib", "tools", "texOpt"],
+  "dictionaryDefinitions": [
+    {
+      "name": "custom-terms",
+      "path": "./.cspell/custom.txt"
+    },
+    {
+      "name": "azure",
+      "path": "./.cspell/azure.txt"
+    },
+    {
+      "name": "bib",
+      "path": "./.cspell/bib.txt"
+    },
+    {
+      "name": "tools",
+      "path": "./.cspell/tools.txt"
+    },
+    {
+      "name": "texOpt",
+      "path": "./.cspell/tex-options.txt"
+    }
+  ]
+}

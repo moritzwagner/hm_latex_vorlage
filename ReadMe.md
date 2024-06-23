@@ -57,5 +57,7 @@ In der `.bib`-Datei des Quellenverzeichnisses kann ein optionaler `annotation`-K
 ### Quellenverwaltung
 Für die Verwaltung der Quellen wird das Tool Zotero empfohlen. Es kann über die Website [Zotero.org](https://www.zotero.org/) heruntergeladen werden. Die Quellen können in Zotero verwaltet und in das `.bib`-Format exportiert werden. Ein automatischer Export in eine lokale `.bib`-Datei ist ebenfalls möglich mit der Erweiterung [Better BibTeX for Zotero](https://retorque.re/zotero-better-bibtex/).
 
+### VS Code Erweiterungen (Rechtschreibprüfung, LateX-Tools)
+Für die Bearbeitung wird die Verwendung von Visual Studio Code empfohlen. Es können die empfohlenen Erweiterungen installiert werden, um die Bearbeitung zu erleichtern. Die Erweiterungen können über das Command (`Ctrl+Shift+P`) `Extensions: Show Recommended Extensions` angezeigt und installiert werden. So kann auch eine Rechtschreibüberprüfung mit der Erweiterung `CSpell` durchgeführt werden. Entsprechende Konfigurationen sind für die Sprachen `de` und `en` bereits in der Datei [`cspell.js`](cspell.json) und im Ordner `.cspell` vorhanden.
 # Lizenz
 Dieses Template steht unter der MIT-Lizenz. Weitere Informationen können der Datei `LICENSE` entnommen werden.
